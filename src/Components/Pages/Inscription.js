@@ -47,7 +47,7 @@ const handleSubmit = async (event) => {
     },
     body: JSON.stringify(data)
   };
-  const reponse= await fetch('http://localhost:3000/users/add',options);
+  const reponse= await fetch(`${process.env.API_BASE_URL}/users/add`,options);
 
   const successMessage = document.getElementById('success-message');
   const errorMessage = document.getElementById('error-message');
