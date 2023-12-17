@@ -37,7 +37,7 @@ const handleSubmit = async (event) => {
     },
     body: JSON.stringify(data)
   };
-  const reponse = await fetch('http://localhost:3000/auths/login',options);
+  const reponse = await fetch(`${process.env.API_BASE_URL}/auths/login`,options);
   const errorMessage = document.getElementById('error-message');
   if (reponse.ok) {
     const authenticatedUser = await reponse.json();
