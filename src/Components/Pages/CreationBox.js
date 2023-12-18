@@ -45,7 +45,7 @@ const CreationBox = () => {
       </div>  
             
         
-            <form method="GET" action="http://localhost:8080/creationBox">
+            <form method="GET" action="${process.env.API_BASE_URL}/creationBox">
               <button id="ajouterPanier"  data-uri="/creationBox"  onclick="creationBox();">Ajouter au panier</button>
               <button id="annulerBox" href="#" data-uri="/creationBox" >Annuler</button>
             </form>      
@@ -136,7 +136,7 @@ const CreationBox = () => {
 
    /* const getBoxes = async () => {
    
-      const response = await fetch('http://localhost:3000/sushis/get_boxes');
+      const response = await fetch('${process.env.API_BASE_URL}/sushis/get_boxes');
       console.log(response.status);
   
       if (response.ok) {
@@ -198,7 +198,7 @@ const CreationBox = () => {
     console.log(' ! CREATION BOX ! ');
 
     try {
-      const response = await fetch('http://localhost:3000/sushis/creationBox');
+      const response = await fetch('${process.env.API_BASE_URL}/sushis/creationBox');
       console.log('Response status:', response.status);
 
       if (response.ok) {
@@ -224,7 +224,7 @@ const CreationBox = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/sushis/ajouterSushi', options);
+      const response = await fetch('${process.env.API_BASE_URL}/sushis/ajouterSushi', options);
       console.log('Response status:', response.status);
 
       if (response.ok) {

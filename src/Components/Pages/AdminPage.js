@@ -145,7 +145,7 @@ const Users = () => {
 </div>
 </form>
 
-  <form method="GET"  action="http://localhost:3000/admin/allOrders">
+  <form method="GET"  action="${process.env.API_BASE_URL}/admin/allOrders">
     <input type="submit" value="Afficher toutes le commandes">
   </form>
 
@@ -299,7 +299,7 @@ const Users = () => {
             return;
           }
       
-          const response = await fetch(`http://localhost:3000/admin/deletebox/${boxIdToDelete}`, {
+          const response = await fetch(`${process.env.API_BASE_URL}/admin/deletebox/${boxIdToDelete}`, {
             method: 'DELETE',
           });
       

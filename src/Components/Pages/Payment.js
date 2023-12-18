@@ -102,7 +102,7 @@ const Payment = () => {
 
                 
 
-                    <form action="http://localhost:3000/payment/checkout/" method="post">
+                    <form action="${process.env.API_BASE_URL}/payment/checkout/" method="post">
                     <input type="hidden" name="userId" value="${userId}" />
                  
                           

@@ -135,7 +135,7 @@ const main = document.querySelector('main');
              <div class="item1">
             <h1> MAKIS</h1>
 
-            <form action="http://localhost:8080/menu?maki" method="get">
+            <form action="${process.env.API_BASE_URL}/menu?maki" method="get">
               <button type="submit">VOIR PLUS</button>
             </form>   
         </div>   
@@ -145,7 +145,7 @@ const main = document.querySelector('main');
              <div class="item2">
             <h1> CALIFORNIA ROLLS</h1>
          
-            <form action="http://localhost:8080/menu?california" method="get">
+            <form action="${process.env.API_BASE_URL}/menu?california" method="get">
               <button type="submit">VOIR PLUS</button>
             </form>   
         </div>   
@@ -155,7 +155,7 @@ const main = document.querySelector('main');
               <div class="item3">
             <h1> SALMON ROLLS</h1>
            
-            <form action="http://localhost:8080/menu?salmon" method="get">
+            <form action="${process.env.API_BASE_URL}/menu?salmon" method="get">
               <button type="submit">VOIR PLUS</button>
             </form>   
         </div>  
@@ -165,7 +165,7 @@ const main = document.querySelector('main');
                <div class="item4">
             <h1> CRUSTYS</h1>
           
-            <form action="http://localhost:8080/menu?crusty" method="get">
+            <form action="${process.env.API_BASE_URL}/menu?crusty" method="get">
               <button type="submit">VOIR PLUS</button>
             </form>   
         </div>  
@@ -211,7 +211,7 @@ const main = document.querySelector('main');
               
             </div>
 
-            <form action="http://localhost:8080/creationBox" method="get">
+            <form action="${process.env.API_BASE_URL}/creationBox" method="get">
                <button id="buttonBox" href="#" data-uri="/creationBox" >Je crée ma box</button>
            </form>   
             
@@ -241,7 +241,7 @@ const main = document.querySelector('main');
       Notre objectif est d'aider le client en lui offrant 
       des services de qualités tout en gardant notre touche d'originalité.</p>
 
-      <form action="http://localhost:8080/menu?box" method="get">
+      <form action="${process.env.API_BASE_URL}/menu?box" method="get">
        <button href="#" class="btn btn-dark px-5 rounded-pill shadow-sm">Découvrez les boxs confectionnés par notre équipe</button>
       </form>   
      
